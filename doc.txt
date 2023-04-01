@@ -1,0 +1,74 @@
+Tag-01: <!--...--> = Defines a comment
+=======================================
+
+***You can use the comment tag to "hide" scripts from browsers without support for scripts (so they don't show them as plain text):
+
+<script type="text/javascript">
+<!--
+function displayMsg() {
+  alert("Hello World!")
+}
+//-->
+</script> 
+
+Tag-02: <!DOCTYPE> = Defines the document type
+==================================
+
+***All HTML documents must start with a <!DOCTYPE> declaration.
+
+The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+
+***The <!DOCTYPE> declaration is NOT case sensitive.
+
+Tag-03: <a> = Defines a hyperlink
+===================================
+
+***The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+***If the <a> tag has no href attribute, it is only a placeholder for a hyperlink.
+
+***Attributes:
+1. download = value: filename = Specifies that the target will be downloaded when a user clicks on the hyperlink (The download attribute is not supported in IE or Edge (prior version 18), or in Safari (prior version 10.1).)
+
+2. href = value: URL = Specifies the URL of the page the link goes to
+
+3. hreflang = value: language_code = Specifies the language of the linked document
+
+4. media = value: media_query = Specifies what media/device the linked document is optimized for
+
+5. ping = value: list_of_URLs = Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.
+
+6. referrerpolicy = value: no-referrer
+no-referrer-when-downgrade
+origin
+origin-when-cross-origin
+same-origin
+strict-origin-when-cross-origin
+unsafe-url = Specifies which referrer information to send with the link
+
+7. rel = value: alternate
+author
+bookmark
+external
+help
+license
+next
+nofollow
+noreferrer
+noopener
+prev
+search
+tag
+= Specifies the relationship between the current document and the linked document
+
+***Search engines can use this attribute to get more information about a link!
+
+8. target = value: _blank
+_parent
+_self
+_top = Specifies where to open the linked document
+
+9. type = value: media_type	= Specifies the media type of the linked document
+
